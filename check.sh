@@ -4,10 +4,8 @@ LOGIN="$1"
 PROJECT="$2"
 
 MAILS="$(cat $3 | tr '\n' ' ')"
-FILE=/home/pi/."$LOGIN"_"$PROJECT"
-sendmail=mail
-
-touch ~/.flag
+FILE=$HOME/."$LOGIN"_"$PROJECT"
+sendmail=msmtp
 
 if [ "$3" = "reset" ];then
 	rm $FILE
@@ -28,7 +26,9 @@ if [ -z "$FLAG" ];then
 fi
 
 echo OK
-$sendmail -s "[42_BIGBROTHER] $LOGIN vient de close $PROJECT." $MAILS << EOF
+$sendmail $MAILS << EOF 
+Subject: [42_BIGBROTHER] $LOGIN vient de close $PROJECT.
+
 $(date)
 $LOGIN vient de close sa team pour le projet $PROJECT.
 EOF
