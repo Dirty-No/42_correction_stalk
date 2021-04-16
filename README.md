@@ -1,6 +1,7 @@
 
 # 42_correction_stalk
 Bash scripts that sends you a mail when a 42 student has closed his team for a given project.
+
 I configured [msmtp](https://doc.ubuntu-fr.org/msmtp) for gmail but you can change it to whatever you want. 
 
 
