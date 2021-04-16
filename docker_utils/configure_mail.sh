@@ -12,7 +12,7 @@ account        gmail
 auth           plain
 host           smtp.gmail.com
 port           587
-from           $MAIL_ADRESS
+from           $MAIL_ADDRESS
 user           $MAIL_USER
 password       $MAIL_PASS
 
