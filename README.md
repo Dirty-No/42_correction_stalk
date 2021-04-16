@@ -21,6 +21,6 @@ Yes, i could "probably" dockerize this, and i did
 
 ## Run:
 
-     docker run -e MAIL_USER=<foo> -e MAIL_ADDRESS=<foo>@gmail.com -e MAIL_PASS=<password> -it bot
+     docker run -e MAIL_USER=<foo> -e MAIL_ADDRESS=<foo>@gmail.com -e MAIL_PASS=<password> -it stalk_bot
 
 If you need help making this work or are from 42Paris staff and which to scold me, feel free to contact me via school's Slack, my login is smaccary.
